@@ -4,7 +4,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        clouds: "url('/assets/center_bg_landing_header.svg')",
+      },
+    },
   },
   plugins: [],
 };

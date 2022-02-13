@@ -1,5 +1,5 @@
-import { MainHeader } from '../components/IndexPage/MainHeader';
+import { SectionOne } from '../components/IndexPage/SectionOne';
 
 export default function Home() {
-  return <MainHeader />;
+  return <SectionOne />;
 }
