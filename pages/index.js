@@ -1,3 +1,5 @@
+import { MainHeader } from '../components/IndexPage/MainHeader';
+
 export default function Home() {
-  return <div>Hello world</div>;
+  return <MainHeader />;
 }
