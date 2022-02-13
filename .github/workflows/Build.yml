@@ -21,4 +21,4 @@ jobs:
     - run: yarn install --frozen-lockfile
     - name: Build the project
     - run: yarn run build
-    - run: npm test
+
