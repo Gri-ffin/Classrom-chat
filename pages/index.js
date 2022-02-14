@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { SectionOne } from '../components/IndexPage/SectionOne';
 import Head from 'next/head';
+import { SectionTwo } from '../components/IndexPage/SectionTwo';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <link rel='icon' href='/images/favicon.ico' />
       </Head>
       <SectionOne />
+      <SectionTwo />
     </Fragment>
   );
 }
