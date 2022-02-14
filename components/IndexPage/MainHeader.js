@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import discordLogo from '../../public/assets/icons/favicon.ico';
+import discordLogo from '../../static/icons/favicon.ico';
 import { downloadLink } from '../Helpers/links';
 
 export const MainHeader = () => {

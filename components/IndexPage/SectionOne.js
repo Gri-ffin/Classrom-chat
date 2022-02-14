@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Fragment } from 'react';
 import { downloadLink } from '../Helpers/links';
 import { MainHeader } from './MainHeader';
-import leftBg from '../../public/assets/left_bg_landing_header.svg';
-import rightBg from '../../public/assets/right_bg_landing_header.svg';
+import leftBg from '../../static/assets/left_bg_landing_header.svg';
+import rightBg from '../../static/assets/right_bg_landing_header.svg';
 import Image from 'next/image';
 
 export const SectionOne = () => {
