@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Discord Clone
 
-## Getting Started
+## What is discord clone?
 
-First, run the development server:
+This is just my _personal project_ trying to clone the real **Discord** Functionalities from front end looks to logic of the chatting and the servers
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+> And of course trying to add my _magical touch_ in it.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Current status of discord-clone
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This project is currently still in development, I don't think that this project will be released **_For copyright stuff_**, I just develop this project for the sake of challenge and pushing my limits as a Developer.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## How to contribute to the project or install it on my local Machine?
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+> **_Make sure that you have [Node](https://nodejs.org) and [Yarn](https://yarnpkg.com) installed on your local machine._**
 
-## Learn More
+To contribute to the project, open your favorite text editore or IDE, _[vscode](https://code.visualstudio.com) is a great example_, first fork this project, Clone your own project to your local machine, install dependencies using **Yarn**, just run:
 
-To learn more about Next.js, take a look at the following resources:
+> Yarn install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+then Start making your fixes or modifcations in a new branch, finally open a pull request to submit your changes for review.
