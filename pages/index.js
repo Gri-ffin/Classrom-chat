@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import { SectionOne } from '../components/IndexPage/SectionOne';
 import Head from 'next/head';
 import { SectionTwo } from '../components/IndexPage/SectionTwo';
+import { SectionThree } from '../components/IndexPage/SectionThree';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <SectionOne />
       <SectionTwo />
+      <SectionThree />
     </Fragment>
   );
 }
