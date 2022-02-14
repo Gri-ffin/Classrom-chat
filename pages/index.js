@@ -3,6 +3,7 @@ import { SectionOne } from '../components/IndexPage/SectionOne';
 import Head from 'next/head';
 import { SectionTwo } from '../components/IndexPage/SectionTwo';
 import { SectionThree } from '../components/IndexPage/SectionThree';
+import { SectionFour } from '../components/IndexPage/SectionFour';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
     </Fragment>
   );
 }
