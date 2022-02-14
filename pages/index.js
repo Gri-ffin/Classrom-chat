@@ -1,5 +1,19 @@
+import { Fragment } from 'react';
 import { SectionOne } from '../components/IndexPage/SectionOne';
+import Head from 'next/head';
 
 export default function Home() {
-  return <SectionOne />;
+  return (
+    <Fragment>
+      <Head>
+        <title>Discord | Your place to talk and hang out</title>
+        <meta
+          name='description'
+          content='discord | your place to talk and hang out'
+        />
+        <link rel='icon' href='/images/favicon.ico' />
+      </Head>
+      <SectionOne />
+    </Fragment>
+  );
 }
