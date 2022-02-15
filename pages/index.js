@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { SectionTwo } from '../components/IndexPage/SectionTwo';
 import { SectionThree } from '../components/IndexPage/SectionThree';
 import { SectionFour } from '../components/IndexPage/SectionFour';
+import { SectionFive } from '../components/IndexPage/SectionFive';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <SectionFive />
     </Fragment>
   );
 }
