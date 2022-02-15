@@ -1,9 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import usaFlag from '../../public/assets/usa_flag.png';
 import { facebookIcon } from '../Helpers/SocialMediaIcons/Facebook';
 import { instagramIcon } from '../Helpers/SocialMediaIcons/Instagram';
 import { twitterIcon } from '../Helpers/SocialMediaIcons/Twitter';
 import { youtubeIcon } from '../Helpers/SocialMediaIcons/Youtube';
+import { downloadLink } from '../Helpers/links';
 
 export const Footer = () => {
   return (
@@ -15,11 +17,64 @@ export const Footer = () => {
           USA
         </p>
         <div className='relative flex flex-row'>
-          {twitterIcon}
-          {instagramIcon}
-          {facebookIcon}
-          {youtubeIcon}
+          <Link href='https://twitter.com/discord'>{twitterIcon}</Link>
+          <Link href='https://www.instagram.com/discord/'>{instagramIcon}</Link>
+          <Link href='https://www.facebook.com/discord/'>{facebookIcon}</Link>
+          <Link href='https://www.youtube.com/discord'>{youtubeIcon}</Link>
         </div>
+      </div>
+      <div className='ml-44'>
+        <ul>
+          <li>
+            <Link href='/product'>
+              <a className='text-blue-700'>Product</a>
+            </Link>
+          </li>
+          <li className='my-3'>
+            <Link href={downloadLink}>
+              <a className='text-white'>Download</a>
+            </Link>
+          </li>
+          <li className='my-3'>
+            <Link href='/nitro'>
+              <a className='text-white'>Nitro</a>
+            </Link>
+          </li>
+          <li>
+            <Link href='/status'>
+              <a className='text-white'>Status</a>
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className='ml-44'>
+        <ul>
+          <li>
+            <Link href='/company'>
+              <a className='text-blue-700'>Company</a>
+            </Link>
+          </li>
+          <li className='my-3'>
+            <Link href='/about'>
+              <a className='text-white'>About</a>
+            </Link>
+          </li>
+          <li className='my-3'>
+            <Link href='/jobs'>
+              <a className='text-white'>Jobs</a>
+            </Link>
+          </li>
+          <li className='my-3'>
+            <Link href='/branding'>
+              <a className='text-white'>Branding</a>
+            </Link>
+          </li>
+          <li>
+            <Link href='newsroom'>
+              <a className='text-white'>Newsroom</a>
+            </Link>
+          </li>
+        </ul>
       </div>
     </footer>
   );
