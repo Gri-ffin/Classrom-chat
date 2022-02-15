@@ -4,7 +4,7 @@ export const youtubeIcon = (
     width='24'
     height='24'
     viewBox='0 0 24 24'
-    className='socialIcon-32i0_n fill-white my-1'
+    className='socialIcon-32i0_n fill-white my-1 hover:cursor-pointer'
   >
     <path
       fillRule='evenodd'
