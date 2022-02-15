@@ -5,6 +5,7 @@ import { SectionTwo } from '../components/IndexPage/SectionTwo';
 import { SectionThree } from '../components/IndexPage/SectionThree';
 import { SectionFour } from '../components/IndexPage/SectionFour';
 import { SectionFive } from '../components/IndexPage/SectionFive';
+import { Footer } from '../components/IndexPage/Footer';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <SectionThree />
       <SectionFour />
       <SectionFive />
+      <Footer />
     </Fragment>
   );
 }
