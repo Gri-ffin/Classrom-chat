@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         clouds: "url('/assets/center_bg_landing_header.svg')",
+        signupBg: "url('/assets/login_bg.svg')",
       },
     },
   },
