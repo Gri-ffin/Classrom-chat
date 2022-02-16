@@ -170,7 +170,7 @@ export const Footer = () => {
           <Image src={discordBlackLogo} alt='Discord' width={50} height={50} />
           <p className='text-white'>Discord</p>
         </span>
-        <Link href='/signup'>
+        <Link href='/register'>
           <a className='text-white ml-[1250px] py-5 px-5 bg-blue-600 rounded-3xl'>
             Signup
           </a>
