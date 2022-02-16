@@ -41,7 +41,9 @@ export const MainHeader = () => {
         </li>
       </ul>
       <Link href='/login'>
-        <a className='text-black ml-[400px] p-3 bg-white rounded-xl'>Login</a>
+        <a className='text-black ml-[400px] h-8 w-16 pl-3 pt-1 mt-2 bg-white rounded-xl'>
+          Login
+        </a>
       </Link>
     </nav>
   );
