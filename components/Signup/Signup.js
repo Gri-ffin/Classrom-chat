@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { Card } from '../UI/Card';
 
 export const Signup = () => {
   return (
-    <div className='text-center w-[40%] m-auto absolute top-[150px] left-[30%] bg-gray-700 text-white rounded-md p-[16px] shadow-md'>
+    <Card>
       <h2 className='font-bold text-2xl mr-6'>Create an account</h2>
 
       <label htmlFor='email' className='block text-gray-400 text-left ml-10'>
@@ -40,6 +41,6 @@ export const Signup = () => {
           Already have an account?
         </a>
       </Link>
-    </div>
+    </Card>
   );
 };
