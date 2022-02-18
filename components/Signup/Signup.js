@@ -12,33 +12,43 @@ export const Signup = () => {
   const usernameRef = useRef();
   const passwordRef = useRef();
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const { signup } = useAuth();
 
   async function handleSubmit(e) {
     e.preventDefault();
-    if (
-      emailRef.current.value.length <= 0 ||
-      usernameRef.current.value.length <= 0 ||
-      passwordRef.current.value.length <= 0
-    ) {
+    if (emailRef.current.value.length <= 0) {
+      setError('Enter a valid email');
+      return;
+    }
+    if (usernameRef.current.value.length <= 0) {
+      setError('Enter a valid username');
+      return;
+    }
+    if (passwordRef.current.value.length <= 5) {
+      setError('password must be 6 characters or more!');
       return;
     }
     try {
       setLoading(true);
+      setError('');
       await signup(emailRef.current.value, passwordRef.current.value);
       await updateProfile(auth.currentUser, {
         displayName: usernameRef.current.value,
       });
-    } catch (e) {
-      alert(e);
+    } catch {
+      setError('Email already in use!');
     }
     setLoading(false);
-    console.log(JSON.stringify(auth.currentUser));
+    emailRef.current.value = '';
+    usernameRef.current.value = '';
+    passwordRef.current.value = '';
   }
 
   return (
     <Card>
       <h2 className='font-bold text-2xl mr-6'>Create an account</h2>
+      <div className='bg-red-400 text-red-700'>{error}</div>
       <form onSubmit={handleSubmit}>
         <label htmlFor='email' className='block text-gray-400 text-left ml-10'>
           EMAIL
