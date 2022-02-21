@@ -7,7 +7,9 @@ export const MainHeader = () => {
   return (
     <nav className='bg-blue-600 pl-20 flex flex-row p-1'>
       <Image src={discordLogo} alt='Discord Logo' width={50} height={50} />
-      <span className='mt-4 m-2 text-white font-bold'>Discord</span>
+      <Link href='/'>
+        <a className='mt-4 m-2 text-white font-bold'>Discord</a>
+      </Link>
       <ul className='text-white text-center flex flex-row pl-56 pt-4'>
         <li className='pr-7'>
           <Link href={downloadLink}>
