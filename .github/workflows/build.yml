@@ -19,10 +19,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 16
-        uses: actions/setup-node@v2
+      - uses: borales/actions-yarn@v2.3.0
         with:
-          node-version: '16'
-          cache: 'yarn'
-      - run: yarn install
-      - run: yarn run build
+          cmd: install --frozen-lockfile
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: build
