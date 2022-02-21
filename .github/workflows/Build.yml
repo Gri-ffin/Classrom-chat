@@ -24,5 +24,7 @@ jobs:
         with:
           node-version: '17'
           cache: 'yarn'
+      - run: npm install -g corepack
+      - run: corepack enable yarn
       - run: yarn install --frozen-lockfile
       - run: yarn run build
