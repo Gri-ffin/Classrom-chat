@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '17'
-          cache: 'yarn'
+          cache: 'npm'
       - run: npm install -g corepack
       - run: corepack enable yarn
       - run: yarn install --frozen-lockfile
