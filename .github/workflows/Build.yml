@@ -19,12 +19,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 17
-        uses: actions/setup-node@v2
+      - uses: borales/actions-yarn@v2.3.0
         with:
-          node-version: '17'
-          cache: 'npm'
-      - run: npm install -g corepack
-      - run: corepack enable yarn
-      - run: yarn install --frozen-lockfile
-      - run: yarn run build
+          cmd: install --frozen-lockfile
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: build
