@@ -4,6 +4,7 @@ import { Card } from '../UI/Card';
 import { useAuth } from '../context/AuthContext';
 import { getAuth, updateProfile } from 'firebase/auth';
 import app from '../Helpers/firebase';
+import { validateEmail } from '../Helpers/functions';
 
 const auth = getAuth();
 
@@ -17,7 +18,10 @@ export const Signup = () => {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    if (emailRef.current.value.length <= 0) {
+    if (
+      emailRef.current.value.length <= 0 ||
+      !validateEmail(emailRef.current.value)
+    ) {
       setError('Enter a valid email');
       return;
     }
