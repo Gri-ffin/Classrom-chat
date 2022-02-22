@@ -40,8 +40,8 @@ export const Signup = () => {
       await updateProfile(auth.currentUser, {
         displayName: usernameRef.current.value,
       });
-    } catch {
-      setError('Email already in use!');
+    } catch (e) {
+      setError(e.code);
     }
     setLoading(false);
     emailRef.current.value = '';
