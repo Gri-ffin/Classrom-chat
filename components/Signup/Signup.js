@@ -42,8 +42,7 @@ export const Signup = () => {
       await updateProfile(auth.currentUser, {
         displayName: usernameRef.current.value,
       });
-      // TODO: Change this to reidrect to server
-      router.push('/');
+      router.push('/chat');
     } catch (e) {
       setError(e.code.split('/')[1]);
     }
