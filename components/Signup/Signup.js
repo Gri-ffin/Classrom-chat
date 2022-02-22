@@ -5,6 +5,7 @@ import { useAuth } from '../context/AuthContext';
 import { getAuth, updateProfile } from 'firebase/auth';
 import app from '../Helpers/firebase';
 import { validateEmail } from '../Helpers/functions';
+import { useRouter } from 'next/router';
 
 const auth = getAuth();
 
@@ -15,6 +16,7 @@ export const Signup = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const { signup } = useAuth();
+  const router = useRouter();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -40,6 +42,8 @@ export const Signup = () => {
       await updateProfile(auth.currentUser, {
         displayName: usernameRef.current.value,
       });
+      // TODO: Change this to reidrect to server
+      router.push('/');
     } catch (e) {
       setError(e.code.split('/')[1]);
     }
