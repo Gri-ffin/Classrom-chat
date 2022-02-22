@@ -20,8 +20,7 @@ export const Login = () => {
       setLoading(true);
       setError('');
       await login(emailRef.current.value, passwordRef.current.value);
-      // TODO: Change this to redirect to server
-      router.push('/');
+      router.push('/chat');
     } catch (e) {
       setError(e.code.split('/')[1]);
     }
