@@ -41,7 +41,7 @@ export const Signup = () => {
         displayName: usernameRef.current.value,
       });
     } catch (e) {
-      setError(e.code);
+      setError(e.code.split('/')[1]);
     }
     setLoading(false);
     emailRef.current.value = '';
