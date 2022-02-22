@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
 const app = initializeApp({
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -9,3 +9,6 @@ const app = initializeApp({
   messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 });
+export const db = getFirestore();
+
+export default app;
