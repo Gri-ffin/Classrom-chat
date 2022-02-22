@@ -3,6 +3,7 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   onAuthStateChanged,
+  signInWithEmailAndPassword,
 } from 'firebase/auth';
 import app from '../Helpers/firebase';
 
@@ -27,10 +28,14 @@ export const AuthProvider = ({ children }) => {
   function signup(email, password) {
     return createUserWithEmailAndPassword(auth, email, password);
   }
+  function login(email, password) {
+    return signInWithEmailAndPassword(auth, email, password);
+  }
 
   const value = {
     currentUser,
     signup,
+    login,
   };
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
