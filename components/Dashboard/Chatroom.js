@@ -21,11 +21,16 @@ export const Chatroom = () => {
   const [messages] = useCollectionData(queriedMessages, { idField: 'id' });
 
   const [formValue, setFormValue] = useState('');
+  const [error, setError] = useState('');
   const scrolltarget = useRef();
 
   const sendMessage = async (e) => {
     e.preventDefault();
     const { uid } = currentUser;
+    if (formValue.trim().length <= 0) {
+      setError("Message can't be null");
+      return;
+    }
     await addDoc(collection(db, 'messages'), {
       text: formValue,
       createdAt: serverTimestamp(),
@@ -33,6 +38,7 @@ export const Chatroom = () => {
       name: currentUser.displayName,
     });
     setFormValue('');
+    setError('');
     scrolltarget.current.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -61,6 +67,11 @@ export const Chatroom = () => {
           Send
         </button>
       </form>
+      {error && (
+        <div className='fixed bg-red-600 text-white bottom-2 right-3 p-5 rounded-md'>
+          {error}
+        </div>
+      )}
     </Fragment>
   );
 };
