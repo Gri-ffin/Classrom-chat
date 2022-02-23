@@ -8,7 +8,7 @@ import {
 } from 'firebase/firestore';
 import { db } from '../Helpers/firebase';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
-import { Fragment, useState } from 'react';
+import { Fragment, useRef, useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import Image from 'next/image';
 import defaultImage from '../../public/images/default-image.png';
@@ -21,6 +21,7 @@ export const Chatroom = () => {
   const [messages] = useCollectionData(queriedMessages, { idField: 'id' });
 
   const [formValue, setFormValue] = useState('');
+  const scrolltarget = useRef();
 
   const sendMessage = async (e) => {
     e.preventDefault();
@@ -32,16 +33,18 @@ export const Chatroom = () => {
       name: currentUser.displayName,
     });
     setFormValue('');
+    scrolltarget.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <Fragment>
-      <div className='p-10 h-[80vh] mx-0 overflow-y-scroll flex flex-col text-white font-bold'>
+      <main className='p-10 h-[80vh] mx-0 overflow-y-scroll flex flex-col text-white font-bold'>
         {messages &&
           messages.map((msg) => (
             <ChatMessage key={msg.id} message={msg} currentUser={currentUser} />
           ))}
-      </div>
+        <div ref={scrolltarget}></div>
+      </main>
       <form
         onSubmit={sendMessage}
         className='h-[10vh] fixed bottom-0 w-[100%] flex'
