@@ -13,4 +13,25 @@
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-left;
   }
+  .message {
+    @apply flex items-center;
+  }
+  .sent {
+    @apply flex-row-reverse;
+  }
+  .sent p {
+    @apply text-white bg-blue-600 self-end mr-3 mt-3;
+  }
+  .received {
+    @apply pl-10;
+  }
+  .received p {
+    @apply bg-red-500 text-black ml-3 mt-3;
+  }
+  .sent span {
+    @apply bg-white text-black m-2 p-1 rounded-sm;
+  }
+  .received span {
+    @apply bg-white text-black m-2 p-1 rounded-sm;
+  }
 }
