@@ -78,13 +78,13 @@ export const Chatroom = () => {
 
 function ChatMessage(props) {
   const { text, uid, name } = props.message;
-  const messageClass = uid === props.currentUser.uid ? 'sent' : 'received';
+  const messageClass = uid === props.currentUser?.uid ? 'sent' : 'received';
 
   return (
     <div className={`message ${messageClass}`}>
       <span className=''>{name}</span>
       <Image
-        src={props.currentUser.photoURL || defaultImage}
+        src={props.currentUser?.photoURL || defaultImage}
         alt='pfp Image'
         width={60}
         height={50}
