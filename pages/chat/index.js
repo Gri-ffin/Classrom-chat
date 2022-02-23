@@ -12,7 +12,7 @@ export default function Chat() {
     !currentUser && router.push('/login');
   }, [currentUser, router]);
   return (
-    <div className='flex'>
+    <div className='flex-col justify-center bg-gray-800 h-screen w-screen'>
       <SideBar />
       <Chatroom />
     </div>
