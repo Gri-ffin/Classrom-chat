@@ -27,11 +27,11 @@ export const Signup = () => {
       setError('Enter a valid email');
       return;
     }
-    if (usernameRef.current.value.length <= 0) {
-      setError('Enter a valid username');
+    if (usernameRef.current.value.trim().length <= 3) {
+      setError('username must be 3 characters long!');
       return;
     }
-    if (passwordRef.current.value.length <= 5) {
+    if (passwordRef.current.value.trim().length <= 5) {
       setError('password must be 6 characters or more!');
       return;
     }
