@@ -34,4 +34,13 @@
   .received span {
     @apply bg-white text-black m-2 p-1 rounded-sm;
   }
+  ::-webkit-scrollbar {
+    @apply w-1;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-[#1e1e24];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#6649b8];
+  }
 }
