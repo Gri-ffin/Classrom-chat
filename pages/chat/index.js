@@ -20,6 +20,7 @@ export default function Chat() {
           name='description'
           content='Chat with your friends or random people online'
         />
+        <link rel='icon' href='/images/favicon.ico' />
       </Head>
       <div className='flex-col justify-center bg-gray-800 h-screen w-screen'>
         <SideBar />
