@@ -171,7 +171,7 @@ export const Footer = () => {
           <p className='text-white'>Discord</p>
         </span>
         <Link href='/register'>
-          <a className='text-white ml-[1250px] h-8 pt-1 mt-3 px-5 bg-blue-600 rounded-3xl'>
+          <a className='text-white ml-[90%] h-8 pt-1 mt-3 px-5 bg-blue-600 rounded-3xl'>
             Signup
           </a>
         </Link>
