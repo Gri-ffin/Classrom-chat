@@ -41,6 +41,6 @@
     @apply bg-[#1e1e24];
   }
   ::-webkit-scrollbar-thumb {
-    @apply bg-[#6649b8];
+    @apply bg-[#6649b8] rounded-xl;
   }
 }
