@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
 import { Fragment, useEffect } from 'react';
 import { useAuth } from '../../components/context/AuthContext';
-import { SideBar } from '../../components/Dashboard/Sidebar';
-import { Chatroom } from '../../components/Dashboard/Chatroom';
+import { SideBar } from '../../components/Chatroom/Sidebar';
+import { Chatroom } from '../../components/Chatroom/Chatroom';
 import Head from 'next/head';
 
 export default function Chat() {

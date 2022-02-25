@@ -5,7 +5,7 @@ import { SectionTwo } from '../components/IndexPage/SectionTwo';
 import { SectionThree } from '../components/IndexPage/SectionThree';
 import { SectionFour } from '../components/IndexPage/SectionFour';
 import { SectionFive } from '../components/IndexPage/SectionFive';
-import { Footer } from '../components/IndexPage/Footer';
+import { Footer } from '../components/Global/Footer';
 
 export default function Home() {
   return (

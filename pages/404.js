@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Fragment } from 'react';
-import { MainHeader } from '../components/IndexPage/MainHeader';
-import { Footer } from '../components/IndexPage/Footer';
+import { MainHeader } from '../components/Global/MainHeader';
+import { Footer } from '../components/Global/Footer';
 import Image from 'next/image';
 
 export default function Custom404() {
