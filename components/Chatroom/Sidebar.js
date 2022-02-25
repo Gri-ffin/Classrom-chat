@@ -1,6 +1,5 @@
 import { SidebarIcon } from './SideBarIcon';
 import discordLogo from '../../public/assets/discord_mini_icon.svg';
-import nitroIcon from '../../public/assets/nitro_icon.svg';
 import icon from '../../public/assets/close_icon.svg';
 import { useRouter } from 'next/router';
 import { useAuth } from '../context/AuthContext';
@@ -13,7 +12,6 @@ export const SideBar = () => {
   }
   async function logoutIconClickHandler() {
     await logout();
-    router.push('/');
   }
 
   return (
@@ -23,7 +21,6 @@ export const SideBar = () => {
         text='Discord'
         clickHandler={discordIconClickHandler}
       />
-      <SidebarIcon icon={nitroIcon} text='Nitro' />
       <SidebarIcon
         icon={icon}
         text='Logout'
