@@ -11,7 +11,7 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { Fragment, useRef, useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import Image from 'next/image';
-import defaultImage from '../../public/images/default-image.png';
+import defaultImage from '../../public/images/default-image.jpeg';
 
 export const Chatroom = () => {
   const { currentUser } = useAuth();
@@ -36,6 +36,7 @@ export const Chatroom = () => {
       createdAt: serverTimestamp(),
       uid,
       name: currentUser.displayName,
+      photoURL: currentUser.photoURL,
     });
     setFormValue('');
     setError('');
@@ -47,7 +48,11 @@ export const Chatroom = () => {
       <main className='p-10 h-[80vh] mx-0 overflow-y-scroll flex flex-col text-white font-bold'>
         {messages &&
           messages.map((msg) => (
-            <ChatMessage key={msg.id} message={msg} currentUser={currentUser} />
+            <ChatMessage
+              key={Math.random()}
+              message={msg}
+              currentUser={currentUser}
+            />
           ))}
         <div ref={scrolltarget}></div>
       </main>
@@ -77,14 +82,14 @@ export const Chatroom = () => {
 };
 
 function ChatMessage(props) {
-  const { text, uid, name } = props.message;
+  const { text, uid, name, photoURL } = props.message;
   const messageClass = uid === props.currentUser?.uid ? 'sent' : 'received';
 
   return (
     <div className={`message ${messageClass}`}>
       <span className=''>{name}</span>
       <Image
-        src={props.currentUser?.photoURL || defaultImage}
+        src={photoURL || defaultImage}
         alt='pfp Image'
         width={60}
         height={50}
