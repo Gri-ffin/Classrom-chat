@@ -63,7 +63,7 @@ export const Chatroom = () => {
         <input
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
-          className='fixed bottom-5 right-8 border-black border-2 w-[90%] h-10 bg-gray-600 rounded-md p-4 caret-white'
+          className='fixed bottom-5 right-8 border-black border-2 w-[90%] h-10 bg-gray-600 rounded-md p-4 caret-white text-white'
           placeholder='Write a message'
         />
         <button type='submit' className='hidden'>
