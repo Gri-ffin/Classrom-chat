@@ -63,12 +63,10 @@ export const Chatroom = () => {
         <input
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
-          className='fixed bottom-5 right-[34%] border-black border-2 w-56 rounded-md'
+          className='fixed bottom-5 right-8 border-black border-2 w-[90%] h-10 bg-gray-600 rounded-md p-4 caret-white'
+          placeholder='Write a message'
         />
-        <button
-          type='submit'
-          className='bg-white border-2 fixed bottom-5 right-[30%] w-14 rounded-md'
-        >
+        <button type='submit' className='hidden'>
           Send
         </button>
       </form>
@@ -91,8 +89,8 @@ function ChatMessage(props) {
       <Image
         src={photoURL || defaultImage}
         alt='pfp Image'
-        width={60}
-        height={50}
+        width={53}
+        height={55}
         className='rounded-3xl'
       />
       <p className='max-w-[500px] mb-[12px] leading-[24px] py-[10px] px-[20px] rounded-lg relative text-center'>
