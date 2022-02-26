@@ -16,15 +16,15 @@ export const Login = () => {
   }
 
   return (
-    <div className='text-center w-[60%] m-auto absolute top-[13%] left-[20%] bg-gray-700 text-white rounded-md p-[16px] shadow-2xl'>
+    <div className='text-center w-[60%] m-auto absolute top-[7%] left-[20%] bg-gray-700 text-white rounded-md p-[16px] shadow-2xl'>
       {error && <div className='bg-red-500 text-white text-xl'>{error}</div>}
       <div className='relative flex flex-col text-center p-4'>
-        <h2 className='text-4xl font-bold text-gray-500 underline mb-5'>
+        <h2 className='text-2xl font-bold text-gray-500 underline mb-5'>
           Welcome traveller, To a new world
         </h2>
         <div className='bg-gray-800 h-24 md:h-16'>
           <button
-            className='text-gray-400 text-3xl p-3 hover:underline'
+            className='text-gray-400 text-xl p-3 hover:underline'
             onClick={googleLoginHandler}
           >
             <GoogleIcon />
