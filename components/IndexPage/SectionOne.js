@@ -25,7 +25,7 @@ export const SectionOne = () => {
         </p>
         <div>
           <Link href={downloadLink}>
-            <a className='md:inline-block px-24 py-4 mt-6 rounded-xl bg-white hidden'>
+            <a className='lg:inline-block px-24 py-4 mt-6 rounded-xl bg-white hidden'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='16'
@@ -43,19 +43,19 @@ export const SectionOne = () => {
             </a>
           </Link>
           <Link href='/'>
-            <a className='md:inline-block px-24 py-4 ml-5 rounded-xl bg-black text-white hidden'>
+            <a className='lg:inline-block px-24 py-4 ml-5 rounded-xl bg-black text-white hidden'>
               Open Discord in your browser
             </a>
           </Link>
         </div>
         <div className='absolute top-[380px] left-0 z-0'>
-          <Image src={leftBg} width={400} height={500} alt='Left Background' />
+          <Image src={leftBg} width={400} height={400} alt='Left Background' />
         </div>
         <div className='absolute top-[360px] right-0 z-0'>
           <Image
             src={rightBg}
             width={400}
-            height={500}
+            height={400}
             alt='Right background'
           />
         </div>
