@@ -16,7 +16,7 @@ export const Login = () => {
   }
 
   return (
-    <div className='text-center w-[60%] m-auto absolute top-[30%] left-[20%] bg-gray-700 text-white rounded-md p-[16px] shadow-2xl'>
+    <div className='text-center w-[60%] m-auto absolute top-[13%] left-[20%] bg-gray-700 text-white rounded-md p-[16px] shadow-2xl'>
       {error && <div className='bg-red-500 text-white text-xl'>{error}</div>}
       <div className='relative flex flex-col text-center p-4'>
         <h2 className='text-4xl font-bold text-gray-500 underline mb-5'>

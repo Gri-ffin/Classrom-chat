@@ -13,7 +13,7 @@ const LoginPage = () => {
         />
         <link rel='icon' href='/images/favicon.ico' />
       </Head>
-      <main className='bg-loginBg bg-center bg-no-repeat bg-cover h-[130vh]'>
+      <main className='bg-loginBg bg-center bg-no-repeat bg-cover h-[100vh]'>
         <Login />
       </main>
     </Fragment>
