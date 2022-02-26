@@ -12,7 +12,7 @@ import discordBlackLogo from '../../public/assets/discord_logo.svg';
 export const Footer = () => {
   return (
     <Fragment>
-      <footer className='relative flex flex-row p-1 justify-around bg-black pt-5'>
+      <footer className='relative md:flex flex-row p-1 justify-around bg-black pt-5 hidden'>
         <div>
           <h3 className='text-blue-600 font-bold text-3xl'>IMAGINE A PLACE</h3>
           <p className='mt-2 text-white'>

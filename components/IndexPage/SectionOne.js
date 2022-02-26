@@ -12,7 +12,7 @@ export const SectionOne = () => {
       <MainHeader />
       <div className='bg-blue-600 bg-clouds bg-auto relative flex flex-col items-center py-[30vh]'>
         <h1 className='text-white font-bold text-5xl'>IMAGINE A PLACE...</h1>
-        <p className='text-white pt-10'>
+        <p className='text-white pt-10 p-4'>
           ...where you can belong to a school club, a gaming group, or a
           worldwide art community.
         </p>
@@ -20,12 +20,12 @@ export const SectionOne = () => {
           Where just you and a handeful of friends can spend time together. A
           place that makes it
         </p>
-        <p className='text-white'>
+        <p className='text-white z-10'>
           easy to talk every day and hang out more often.
         </p>
         <div>
           <Link href={downloadLink}>
-            <a className='inline-block px-24 py-4 mt-6 rounded-xl bg-white'>
+            <a className='md:inline-block px-24 py-4 mt-6 rounded-xl bg-white hidden'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='16'
@@ -43,19 +43,19 @@ export const SectionOne = () => {
             </a>
           </Link>
           <Link href='/'>
-            <a className='inline-block px-24 py-4 ml-5 rounded-xl bg-black text-white'>
+            <a className='md:inline-block px-24 py-4 ml-5 rounded-xl bg-black text-white hidden'>
               Open Discord in your browser
             </a>
           </Link>
         </div>
-        <div className='absolute top-[380px] left-0'>
-          <Image src={leftBg} width={400} height={400} alt='Left Background' />
+        <div className='absolute top-[380px] left-0 z-0'>
+          <Image src={leftBg} width={400} height={500} alt='Left Background' />
         </div>
-        <div className='absolute top-[360px] right-0'>
+        <div className='absolute top-[360px] right-0 z-0'>
           <Image
             src={rightBg}
             width={400}
-            height={400}
+            height={500}
             alt='Right background'
           />
         </div>

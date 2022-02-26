@@ -6,7 +6,7 @@ import { downloadLink } from '../Helpers/links';
 export const MainHeader = () => {
   return (
     <nav className='bg-blue-600 flex flex-row justify-evenly'>
-      <div className='flex flex-row'>
+      <div className='sm:flex sm:flex-row hidden'>
         <Image src={discordLogo} alt='Discord Logo' width={50} height={50} />
         <Link href='/'>
           <a className='text-white font-bold mt-4 ml-2'>Discord</a>
@@ -45,7 +45,9 @@ export const MainHeader = () => {
         </li>
       </ul>
       <Link href='/login'>
-        <a className='text-black h-8 pt-1 mt-2 bg-white rounded-xl'>Login</a>
+        <a className='text-black h-8 pt-1 mt-2 px-2 bg-white rounded-xl hidden sm:inline-block'>
+          Login
+        </a>
       </Link>
     </nav>
   );
