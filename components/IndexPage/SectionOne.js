@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { downloadLink } from '../Helpers/links';
 import { MainHeader } from '../Global/MainHeader';
 import leftBg from '../../public/assets/left_bg_landing_header.svg';
@@ -7,11 +7,26 @@ import rightBg from '../../public/assets/right_bg_landing_header.svg';
 import Image from 'next/image';
 
 export const SectionOne = () => {
+  const [windowW, setWindowW] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowW(window.innerWidth);
+    }
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <Fragment>
       <MainHeader />
       <div className='bg-blue-600 bg-clouds bg-auto relative flex flex-col items-center py-[30vh]'>
-        <h1 className='text-white font-bold text-5xl'>IMAGINE A PLACE...</h1>
+        <h1 className='text-white font-bold text-5xl text-center'>
+          IMAGINE A PLACE...
+        </h1>
         <p className='text-white pt-10 p-4'>
           ...where you can belong to a school club, a gaming group, or a
           worldwide art community.
@@ -20,7 +35,7 @@ export const SectionOne = () => {
           Where just you and a handeful of friends can spend time together. A
           place that makes it
         </p>
-        <p className='text-white z-10'>
+        <p className='text-white z-10 p-4'>
           easy to talk every day and hang out more often.
         </p>
         <div>
@@ -48,17 +63,19 @@ export const SectionOne = () => {
             </a>
           </Link>
         </div>
-        <div className='absolute top-[380px] left-0 z-0'>
-          <Image src={leftBg} width={400} height={400} alt='Left Background' />
+        <div className='absolute top-[50%] left-0 z-0'>
+          <Image src={leftBg} width={400} height={500} alt='Left Background' />
         </div>
-        <div className='absolute top-[360px] right-0 z-0'>
-          <Image
-            src={rightBg}
-            width={400}
-            height={400}
-            alt='Right background'
-          />
-        </div>
+        {windowW > 758 && (
+          <div className='absolute top-[48%] right-0 z-0'>
+            <Image
+              src={rightBg}
+              width={400}
+              height={500}
+              alt='Right background'
+            />
+          </div>
+        )}
       </div>
     </Fragment>
   );

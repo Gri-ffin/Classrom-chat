@@ -38,7 +38,7 @@
     @apply w-1;
   }
   ::-webkit-scrollbar-track {
-    @apply bg-[#1e1e24];
+    @apply bg-transparent;
   }
   ::-webkit-scrollbar-thumb {
     @apply bg-[#6649b8] rounded-xl;

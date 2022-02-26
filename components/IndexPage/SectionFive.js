@@ -29,7 +29,7 @@ export const SectionFive = () => {
       </p>
       <div className='mt-6 mb-20'>
         <Link href={downloadLink}>
-          <a className='bg-blue-600 inline px-8 py-3 text-white rounded-3xl'>
+          <a className='bg-blue-600 inline sm:px-8 py-3 px-3 text-white rounded-3xl'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='16'

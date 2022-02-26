@@ -3,8 +3,8 @@ import hangingOutSVG from '../../public/assets/hanging_out_easy_landing.svg';
 
 export const SectionThree = () => {
   return (
-    <section className='bg-gray-100 relative flex flex-row'>
-      <div className='mt-[280px] text-center ml-4'>
+    <section className='bg-gray-100 relative flex sm:flex-row flex-col'>
+      <div className='mt-[25%] text-center ml-4'>
         <h2 className='text-black font-bold text-4xl'>
           Where hanging out is easy
         </h2>

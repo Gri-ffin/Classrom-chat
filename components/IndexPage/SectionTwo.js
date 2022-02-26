@@ -3,7 +3,7 @@ import inviteOnlySVG from '../../public/assets/invite_only_landing.svg';
 
 export const SectionTwo = () => {
   return (
-    <section className='relative flex flex-row'>
+    <section className='relative flex sm:flex-row flex-col'>
       <div>
         <Image
           src={inviteOnlySVG}
@@ -12,7 +12,7 @@ export const SectionTwo = () => {
           height={1500}
         />
       </div>
-      <div className='mt-[280px] text-center mr-4'>
+      <div className='mt-[15%] text-center mr-4'>
         <h2 className='text-black font-bold text-4xl'>
           create an invite-only place where you belong
         </h2>
