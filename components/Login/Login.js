@@ -22,7 +22,7 @@ export const Login = () => {
         <h2 className='text-4xl font-bold text-gray-500 underline mb-5'>
           Welcome traveller, To a new world
         </h2>
-        <div className='bg-gray-800 h-16'>
+        <div className='bg-gray-800 h-24 md:h-16'>
           <button
             className='text-gray-400 text-3xl p-3 hover:underline'
             onClick={googleLoginHandler}
