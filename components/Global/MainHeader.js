@@ -23,7 +23,7 @@ export const MainHeader = () => {
             <a>Nitro</a>
           </Link>
         </li>
-        <li className='px-2'>
+        <li className='px-2 hidden sm:inline-block'>
           <Link href='/safety'>
             <a>Safety</a>
           </Link>
@@ -38,7 +38,7 @@ export const MainHeader = () => {
             <a>Blog</a>
           </Link>
         </li>
-        <li>
+        <li className='hidden sm:inline-block'>
           <Link href='/careers'>
             <a>Careers</a>
           </Link>

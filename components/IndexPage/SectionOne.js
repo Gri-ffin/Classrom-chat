@@ -23,7 +23,7 @@ export const SectionOne = () => {
   return (
     <Fragment>
       <MainHeader />
-      <div className='bg-blue-600 bg-clouds bg-auto relative flex flex-col items-center py-[30vh]'>
+      <div className='bg-blue-600 bg-clouds bg-auto relative flex flex-col items-center pb-[30vh] pt-[13vh] sm:pt-[30vh]'>
         <h1 className='text-white font-bold text-5xl text-center'>
           IMAGINE A PLACE...
         </h1>
