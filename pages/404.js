@@ -3,13 +3,18 @@ import { Fragment } from 'react';
 import { MainHeader } from '../components/Global/MainHeader';
 import { Footer } from '../components/Global/Footer';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function Custom404() {
   return (
     <Fragment>
+      <Head>
+        <title>Page not found | Discord</title>
+        <link rel='icon' href='/images/favicon.ico' />
+      </Head>
       <MainHeader />
-      <main className='relative flex flex-row my-40 mx-10'>
-        <div className='w-[60%] ml-10'>
+      <main className='relative flex md:flex-row flex-col-reverse my-40 mx-10'>
+        <div className='md:w-[60%] ml-10'>
           <h1 className='font-extrabold text-6xl text-blue-600 pb-8'>
             Wrong Turn?
           </h1>
@@ -32,7 +37,7 @@ export default function Custom404() {
             </li>
           </ul>
         </div>
-        <div className='w-[40%]'>
+        <div className='md:w-[40%]'>
           <Image
             src='/images/error404.gif'
             alt='Nelly serving noodles!'
