@@ -29,8 +29,8 @@ export const MainHeader = () => {
           </Link>
         </li>
         <li className='px-2'>
-          <Link href='/support'>
-            <a>Support</a>
+          <Link href='/chat'>
+            <a>chatroom</a>
           </Link>
         </li>
         <li className='px-2'>
