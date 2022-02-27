@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import usaFlag from '../../public/assets/usa_flag.png';
+import usaFlag from '../../public/images/usa_flag.png';
 import { facebookIcon } from '../Helpers/SocialMediaIcons/Facebook';
 import { instagramIcon } from '../Helpers/SocialMediaIcons/Instagram';
 import { twitterIcon } from '../Helpers/SocialMediaIcons/Twitter';
