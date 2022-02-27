@@ -30,7 +30,7 @@ export const MainHeader = () => {
         </li>
         <li className='px-2'>
           <Link href='/chat'>
-            <a>chatroom</a>
+            <a>Chatroom</a>
           </Link>
         </li>
         <li className='px-2'>
