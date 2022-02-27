@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { loginHelper } from '../Helpers/functions';
-import { GoogleIcon } from './GoogleIcon';
+import { GoogleIcon } from '../Helpers/SocialMediaIcons/GoogleIcon';
 
 export const Login = () => {
   const [loading, setLoading] = useState(false);
