@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
@@ -24,12 +25,16 @@ export const Login = () => {
         </h2>
         <div className='bg-gray-800 h-24 md:h-16'>
           <button
-            className='text-gray-400 text-xl p-3 hover:underline'
+            className='text-gray-400 text-md sm:text-xl p-3 hover:underline'
             onClick={googleLoginHandler}
           >
             <GoogleIcon />
             Login with Google
           </button>
+        </div>
+        <br />
+        <div className='bg-gray-800 text-xl p-3 hover:underline text-blue-600'>
+          <Link href='/'>Return to Home page</Link>
         </div>
         {loading && (
           <div className=' flex justify-center items-center'>
