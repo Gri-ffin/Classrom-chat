@@ -10,8 +10,6 @@ A simple (_"Personal Project"_) public chat application with a discord front end
 4. Create a .env.local file.
 5. Create your env variables (_ex: API_FIREBASE_KEY = "your project api key") **Make sure you append *** NEXT_PUBLIC_ *** before every variable name you create (see [docs](https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser)) And separate every variable in its own line without a breaking comma.
 6. Replace my own environnement variables with your own in the **firebase.js** inside components/Helpers folders.
-7. Run
-        yarn dev
-
+7. Run this command in the terminal: **yarn dev**.
 8. This will start development server.
 9. Then start making your own changes :)
