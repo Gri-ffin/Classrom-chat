@@ -3,12 +3,17 @@ import discordLogo from '../../public/assets/discord_mini_icon.svg';
 import icon from '../../public/assets/close_icon.svg';
 import { useRouter } from 'next/router';
 import { useAuth } from '../context/AuthContext';
+import githubIcon from '../../public/assets/github_icon.svg';
+import { codeSource } from '../Helpers/links';
 
 export const SideBar = () => {
   const { logout } = useAuth();
   const router = useRouter();
   function discordIconClickHandler() {
     router.push('/');
+  }
+  function githubIconClickHandler() {
+    router.push(codeSource);
   }
   async function logoutIconClickHandler() {
     await logout();
@@ -20,6 +25,11 @@ export const SideBar = () => {
         icon={discordLogo}
         text='Discord'
         clickHandler={discordIconClickHandler}
+      />
+      <SidebarIcon
+        icon={githubIcon}
+        text='Code source'
+        clickHandler={githubIconClickHandler}
       />
       <SidebarIcon
         icon={icon}
