@@ -20,7 +20,7 @@ const auth = getAuth();
 export const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState();
   const [loading, setLoading] = useState(true);
-  // listen to the change of the user on each render
+  // listen to the change of the user and change the userState
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
