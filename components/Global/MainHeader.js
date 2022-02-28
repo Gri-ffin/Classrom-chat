@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import discordLogo from '../../public/images/favicon.ico';
-import { downloadLink } from '../Helpers/links';
+import { codeSource, downloadLink } from '../Helpers/links';
+import githubIcon from '../../public/assets/github_icon.svg';
 
 export const MainHeader = () => {
   return (
@@ -19,6 +20,16 @@ export const MainHeader = () => {
           </Link>
         </li>
         <li className='px-2'>
+          <Link href={codeSource}>
+            <a>Code</a>
+          </Link>
+        </li>
+        <li className='px-2'>
+          <Link href='/chat'>
+            <a>Chatroom</a>
+          </Link>
+        </li>
+        <li className='px-2'>
           <Link href='/nitro'>
             <a>Nitro</a>
           </Link>
@@ -28,19 +39,9 @@ export const MainHeader = () => {
             <a>Safety</a>
           </Link>
         </li>
-        <li className='px-2'>
-          <Link href='/chat'>
-            <a>Chatroom</a>
-          </Link>
-        </li>
-        <li className='px-2'>
+        <li className='hidden sm:inline-block'>
           <Link href='/blog'>
             <a>Blog</a>
-          </Link>
-        </li>
-        <li className='hidden sm:inline-block'>
-          <Link href='/careers'>
-            <a>Careers</a>
           </Link>
         </li>
       </ul>
