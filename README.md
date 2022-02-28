@@ -18,8 +18,10 @@ A simple (_"Personal Project"_) public chat application with a discord front end
 
 7. Replace my own environnement variables with your own in the **firebase.js** inside components/Helpers folders.
 
-8. Run this command in the terminal: **yarn dev**.
+8. First run this command on your terminal: **yarn install**. 
 
-9. This will start development server.
+9. Then run this command in the terminal: **yarn dev**.
 
-10. Then start making your own changes :)
+10. This will start development server.
+
+11. Then start making your own changes :)
