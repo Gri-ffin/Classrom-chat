@@ -1,11 +1,9 @@
-import { Text404 } from './404/Text404';
-import { Image404 } from './404/Image404';
-import { Links } from './404/Links';
-import Link from 'next/link';
+import { Text404 } from '../components/404Components/Text404';
+import { Image404 } from '../components/404Components/Image404';
+import { Links } from '../components/404Components/Links';
 import { Fragment } from 'react';
 import { MainHeader } from '../components/Header/MainHeader';
 import { Footer } from '../components/Footer/Footer';
-import Image from 'next/image';
 import Head from 'next/head';
 
 export default function Custom404() {
