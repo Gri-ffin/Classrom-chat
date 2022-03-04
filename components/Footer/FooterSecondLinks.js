@@ -29,4 +29,4 @@ export function FooterSecondLinks() {
           <a className='text-white'>News Space</a>
         </Link>
       </li>
-    </ul>
+    </ul>)}
