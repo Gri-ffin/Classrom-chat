@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-export function FooterThirdLinks({}) {
+export function FooterFourthLinks({}) {
   return (
     <ul>
       <li className='py-2'>
