@@ -1,7 +1,8 @@
 import { Aside } from './Aside';
 import { FooterFirstLinks } from './FooterFirstLinks';
-import { FooterThirdLinks } from './FooterFourthLinks';
-import { FooterSecondLinks } from './FooterThirdLinks';
+import { FooterFourthLinks } from './FooterFourthLinks';
+import { FooterThirdLinks } from './FooterThirdLinks';
+import { FooterSecondLinks} from './FooterSecondLinks';
 import Image from 'next/image';
 import usaFlag from '../../public/images/usa_flag.png';
 import { facebookIcon } from '../Helpers/SocialMediaIcons/Facebook';
@@ -34,13 +35,13 @@ export const Footer = () => {
           <FooterFirstLinks />
         </div>
         <div>
-          <FooterFirstLinks />
-        </div>
-        <div>
           <FooterSecondLinks />
         </div>
         <div>
           <FooterThirdLinks />
+        </div>
+        <div>
+          <FooterFourthLinks />
         </div>
       </footer>
       <Aside discordBlackLogo={discordBlackLogo} />
