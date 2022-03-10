@@ -10,7 +10,7 @@ export default function HeaderLinks({ downloadLink, codeSource }) {
       </li>
       <li className='px-2'>
         <Link href={codeSource}>
-          <a>Code</a>
+          <a>Source Code</a>
         </Link>
       </li>
       <li className='px-2'>
