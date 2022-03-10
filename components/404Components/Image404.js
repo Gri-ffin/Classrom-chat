@@ -9,6 +9,7 @@ export function Image404({}) {
         alt='Nelly serving noodles!'
         height={350}
         width={350}
+        priority={true}
       />
     </div>
   );
