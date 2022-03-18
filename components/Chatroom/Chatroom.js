@@ -18,10 +18,12 @@ export const Chatroom = () => {
 
   const messagesRef = collection(db, 'messages');
   const queriedMessages = query(messagesRef, orderBy('createdAt'), limit(25));
+  // get the last 25 messages from the firestore
   const [messages] = useCollectionData(queriedMessages, { idField: 'id' });
 
   const [formValue, setFormValue] = useState('');
   const [error, setError] = useState('');
+  // to help us scroll to the last message when added
   const scrolltarget = useRef();
 
   const sendMessage = async (e) => {
@@ -31,6 +33,7 @@ export const Chatroom = () => {
       setError("Message can't be null");
       return;
     }
+    // we add a document to the firestore
     await addDoc(collection(db, 'messages'), {
       text: formValue,
       createdAt: serverTimestamp(),
@@ -38,8 +41,10 @@ export const Chatroom = () => {
       name: currentUser.displayName,
       photoURL: currentUser.photoURL,
     });
+    // reset fields
     setFormValue('');
     setError('');
+    // scroll to the last message
     scrolltarget.current.scrollIntoView({ behavior: 'smooth' });
   };
 
