@@ -1,5 +1,4 @@
 # Discord/public chat
-## Project no longer maintained!!!
 
 A simple (_"Personal Project"_) public chat application with a discord front end where you can connect with your google account and chat with people in real time, was developeed using **Firebase** for backend and authentication, and **Nextjs** as well as **Tailwindcss** for Front end.
 
