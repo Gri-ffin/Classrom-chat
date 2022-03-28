@@ -51,10 +51,10 @@ export const SectionOne = () => {
             </a>
           </Link>
         </div>
-        <div className='absolute hidden md:block top-[55%] left-0 z-0'>
+        <div className='absolute hidden md:block top-[50%] left-0 z-0'>
           <Image src={leftBg} width={400} height={500} alt='Left Background' />
         </div>
-          <div className='absolute hidden md:block top-[50%] right-0 z-0'>
+          <div className='absolute hidden md:block top-[48%] right-0 z-0'>
             <Image
               src={rightBg}
               width={400}
