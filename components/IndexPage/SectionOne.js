@@ -7,18 +7,6 @@ import rightBg from '../../public/assets/right_bg_landing_header.svg';
 import Image from 'next/image';
 
 export const SectionOne = () => {
-  const [windowW, setWindowW] = useState(window.innerWidth);
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowW(window.innerWidth);
-    }
-    window.addEventListener('resize', handleResize);
-    handleResize();
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <Fragment>
@@ -63,11 +51,10 @@ export const SectionOne = () => {
             </a>
           </Link>
         </div>
-        <div className='absolute top-[50%] left-0 z-0'>
+        <div className='absolute hidden md:block top-[50%] left-0 z-0'>
           <Image src={leftBg} width={400} height={500} alt='Left Background' />
         </div>
-        {windowW > 758 && (
-          <div className='absolute top-[48%] right-0 z-0'>
+          <div className='absolute hidden md:block top-[50%] right-0 z-0'>
             <Image
               src={rightBg}
               width={400}
@@ -75,7 +62,6 @@ export const SectionOne = () => {
               alt='Right background'
             />
           </div>
-        )}
       </div>
     </Fragment>
   );
