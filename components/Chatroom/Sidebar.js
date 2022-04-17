@@ -1,5 +1,5 @@
 import { SidebarIcon } from './SideBarIcon';
-import discordLogo from '../../public/assets/discord_mini_icon.svg';
+import discordLogo from '../../public/assets/star.svg';
 import icon from '../../public/assets/close_icon.svg';
 import { useRouter } from 'next/router';
 import { useAuth } from '../context/AuthContext';
