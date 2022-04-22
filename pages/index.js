@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>Discord | Your place to talk and hang out</title>
+        <title>Classroom Chat</title>
         <meta
           name='description'
           content='discord | your place to talk and hang out'

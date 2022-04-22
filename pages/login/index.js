@@ -6,7 +6,7 @@ const LoginPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>Discord</title>
+        <title>Classromm Chat | Login</title>
         <meta
           name='description'
           content='Discord is the easiest way to communicate over voice, video, and text.  Chat, hang out, and stay close with your friends and communities.'
