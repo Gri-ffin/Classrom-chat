@@ -1,5 +1,5 @@
 import { SidebarIcon } from './SideBarIcon';
-import discordLogo from '../../public/assets/star.svg';
+import stars from '../../public/assets/star.svg';
 import icon from '../../public/assets/close_icon.svg';
 import { useRouter } from 'next/router';
 import { useAuth } from '../context/AuthContext';
@@ -9,7 +9,7 @@ import { codeSource } from '../Helpers/links';
 export const SideBar = () => {
   const { logout } = useAuth();
   const router = useRouter();
-  function discordIconClickHandler() {
+  function starsIconClickHandler() {
     router.push('/');
   }
   function githubIconClickHandler() {
@@ -22,9 +22,9 @@ export const SideBar = () => {
   return (
     <div className='fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-primary text-secondary shadow-lg'>
       <SidebarIcon
-        icon={discordLogo}
+        icon={stars}
         text='Front page'
-        clickHandler={discordIconClickHandler}
+        clickHandler={starsIconClickHandler}
       />
       <SidebarIcon
         icon={githubIcon}
