@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function DiscordLogo({ discordLogo }) {
+export default function Logo({ discordLogo }) {
   return (
     <div className='sm:flex sm:flex-row hidden'>
       <Image src={discordLogo} alt='Discord Logo' width={50} height={50} />
